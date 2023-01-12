@@ -1,0 +1,41 @@
+@use "module.scss";
+@use "sass:math";
+
+@use "module" as c;
+
+.exercise {
+  border: 2px solid c.$color-primary;
+  display: flex;
+  flex-direction: column;
+  font-size: c.rem(16px); // FIRST FUNCTION USE
+  .exercise-title {
+    color: c.$color-tertiary;
+    align-self: center;
+    border-bottom: 2px solid c.$color-secondary;
+  }
+  .exercise-section {
+    display: flex;
+    margin: 0 1rem;
+  }
+  .sec1 {
+    border: 1px solid c.$color-tertiary;
+  }
+  .sec2 {
+    border: 1px solid c.$color-secondary;
+    margin: 1rem;
+  }
+}
+
+.exart-red {
+  @include c.art-features();
+}
+
+.exart-blue {
+  @include c.art-features(c.$color-secondary);
+}
+
+.exart-green {
+  @include c.art-features(c.$color-tertiary, c.$color-secondary);
+  flex-grow: 1;
+  font-size: c.rem(24px); // SECOND FUNCTION USE
+}

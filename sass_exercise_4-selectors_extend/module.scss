@@ -1,0 +1,24 @@
+@use "sass:math";
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+@function remasd($px) {
+  $rem-size: 16px;
+  $calc: $px/16;
+  @return $calc;
+}
+
+@mixin art-features($color: $color-primary, $border-color: $color-tertiary) {
+  color: $color;
+  border: 1px solid $border-color;
+  text-align: center;
+  padding: 1rem;
+}
+
+@function rem($px) {
+  $calc: math.div($px, 16px);
+  $convert: $calc + rem;
+  @return $convert;
+}

@@ -1,0 +1,38 @@
+.exercise {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.exercise .exercise-title {
+  color: green;
+  align-self: center;
+  border-bottom: 1px solid blue;
+  width: fit-content;
+}
+
+.exercise-section {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  margin: 1rem;
+}
+
+.box-red, .exart-red {
+  border: 1px solid green;
+}
+.box-red p, .exart-red p {
+  color: red;
+  padding: 1rem;
+  text-align: center;
+}
+
+.box-blue, .exart-blue {
+  border: 1px solid green;
+}
+.box-blue p, .exart-blue p {
+  color: blue;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=c-style.css.map */

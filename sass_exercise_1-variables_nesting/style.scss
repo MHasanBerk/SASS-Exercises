@@ -1,0 +1,49 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+.exercise {
+  border: 1px solid $color-primary;
+  display: flex;
+  flex-direction: column;
+
+  .exercise-title {
+    color: $color-tertiary;
+    align-self: center;
+    border-bottom: 1px solid $color-secondary;
+    width: fit-content;
+  }
+}
+
+.exercise-section {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $color-tertiary;
+  margin: 1rem;
+}
+
+.box-red {
+  p {
+    color: $color-primary;
+    padding: 1rem;
+    text-align: center;
+  }
+  border: 1px solid $color-tertiary;
+}
+
+.box-blue {
+  p {
+    color: $color-secondary;
+    padding: 1rem;
+    text-align: center;
+  }
+  border: 1px solid $color-tertiary;
+}
+
+.exart-blue {
+  @extend .box-blue;
+}
+
+.exart-red {
+  @extend .box-red;
+}
