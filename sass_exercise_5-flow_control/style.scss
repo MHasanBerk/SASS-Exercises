@@ -60,7 +60,7 @@ $box-font-color: black;
     width: c.rem(45px);
     height: c.rem(45px);
     background-color: $box-bg-color;
-    color: black;
+    color: $box-font-color;
     border: 1px solid c.$color-primary;
     margin-top: 1rem;
   }
