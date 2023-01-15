@@ -16,7 +16,7 @@
     &_secondary {
       @extend .exercise-title;
       padding: 1rem;
-      border: 2px solid red;
+      border: 2px solid c.$color-primary;
     }
   }
   //--------------------------------------------//
